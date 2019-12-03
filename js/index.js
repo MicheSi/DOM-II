@@ -90,3 +90,11 @@ destDivs.forEach(div => {
         event.stopPropagation();
     })
 })
+
+// Prevent Default
+const stopRefresh = document.querySelectorAll('a')
+stopRefresh.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+    })
+})
