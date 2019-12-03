@@ -71,3 +71,22 @@ rotateImgs.forEach(image => {
         image.style.transition = '5s'
     })
 })
+
+// Event Propagation
+const home = document.querySelector('.home')
+home.addEventListener('click', () => {
+    home.style.backgroundColor = 'lightseagreen'
+})
+
+const destSection = document.querySelector('.content-pick')
+destSection.addEventListener('click', () => {
+    destSection.style.backgroundColor = '#17A2B8'
+})
+
+const destDivs = document.querySelectorAll('.destination')
+destDivs.forEach(div => {
+    div.addEventListener('click', (event) => {
+        div.style.backgroundColor = 'coral';
+        event.stopPropagation();
+    })
+})
