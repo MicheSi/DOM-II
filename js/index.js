@@ -48,7 +48,12 @@ buttons.forEach(button => {
     })
 })
 
-//Event 8
+//Event 8 - Click
+const rotateLogo = document.querySelector('.logo-heading')
+rotateLogo.addEventListener('click', () => {
+    rotateLogo.style.transform = 'rotateY(360deg)'
+    rotateLogo.style.transition = '5s'
+})
 
 //Event 9
 
