@@ -55,6 +55,12 @@ rotateLogo.addEventListener('click', () => {
     rotateLogo.style.transition = '5s'
 })
 
-//Event 9
+//Event 9 - Context Menu
+const navLinks = document.querySelectorAll('.nav-link')
+navLinks.forEach(link => {
+    link.addEventListener('contextmenu', () => {
+        link.style.color = 'turquoise';
+    })
+})
 
 //Event 10
