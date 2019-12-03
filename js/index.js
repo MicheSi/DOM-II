@@ -63,4 +63,11 @@ navLinks.forEach(link => {
     })
 })
 
-//Event 10
+//Event 10 - Load
+const rotateImgs = document.querySelectorAll('img')
+rotateImgs.forEach(image => {
+    image.addEventListener('load', () => {
+        image.style.transform = 'rotateX(360deg)'
+        image.style.transition = '5s'
+    })
+})
